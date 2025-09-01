@@ -108,7 +108,7 @@ if __name__ == "__main__":
     data2 = parse_p_docs_tag_soup("sense.txt")
 
     print("------------------------------")
-    print("[bold red]]rfa.txt data")
+    print("[bold red]rfa.txt data")
     report_stats(data1)
     print("------------------------------")
     print("[bold red]sense.txt data")
