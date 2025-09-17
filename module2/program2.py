@@ -216,7 +216,7 @@ def main():
 
     report_stats(index)
 
-    print("\n[bold magenta]Index File Sizes")
+    print("\n[bold magenta]File Size Analysis")
     print(f"Dictionary JSON size (bytes): {dict_size}")
     print(f"Inverted file size (bytes): {postings_size}")
     print(f"Original text size (bytes): {original_size}")
@@ -225,7 +225,7 @@ def main():
     if original_size:
         ratio = total_index / original_size * 100
         print(f"Index is {ratio:.2f}% of original text size.")
-        print("Index smaller than original text?", 'YES' if total_index < original_size else 'NO')
+        print("Index size + dictionary size smaller than original text?", 'YES' if total_index < original_size else 'NO')
     print("Dictionary vs Postings: larger component is:", 'dictionary' if dict_size > postings_size else 'postings' if postings_size > dict_size else 'equal')
 
 if __name__ == '__main__':
