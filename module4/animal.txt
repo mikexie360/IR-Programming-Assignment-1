@@ -1,0 +1,74 @@
+<P ID=1>
+bird
+dog
+dog
+dog
+</P>
+
+<P ID=2>
+aardvark
+bird
+bird
+cat
+egret
+</P>
+
+<P ID=3>
+aardvark
+aardvark
+aardvark
+aardvark
+aardvark
+bird
+dog
+fish
+fish
+fish
+</P>
+
+<P ID=4>
+aardvark
+aardvark
+bird
+dog
+fish
+fish
+fish
+</P>
+
+<P ID=5>
+bird
+egret
+egret
+</P>
+
+<P ID=6>
+bird
+</P>
+
+<P ID=7>
+bird
+bird
+bird
+bird
+bird
+bird
+dog
+dog
+dog
+dog
+dog
+</P>
+
+<P ID=8>
+aardvark
+bird
+bird
+bird
+bird
+bird
+bird
+bird
+bird
+</P>
+
