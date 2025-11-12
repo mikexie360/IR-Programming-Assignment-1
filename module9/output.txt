@@ -1,0 +1,127 @@
+[TASK (a)] Studying English training data: indicative features (10)
+great   34.3% (pos)     16.7% (neg)
+excellent       11.5% (pos)     3.0% (neg)
+wonderful       9.2% (pos)      2.0% (neg)
+of the best     5.9% (pos)      1.0% (neg)
+perfect 8.5% (pos)      2.5% (neg)
+best    24.9% (pos)     14.0% (neg)
+the best        15.9% (pos)     7.6% (neg)
+loved   7.4% (pos)      2.2% (neg)
+is great        6.2% (pos)      1.5% (neg)
+love    22.8% (pos)     12.9% (neg)
+bad     11.6% (pos)     35.6% (neg)
+worst   1.6% (pos)      16.1% (neg)
+the worst       1.2% (pos)      13.4% (neg)
+waste   0.8% (pos)      9.3% (neg)
+awful   1.2% (pos)      10.2% (neg)
+terrible        1.4% (pos)      9.2% (neg)
+stupid  1.9% (pos)      8.9% (neg)
+worse   1.8% (pos)      8.4% (neg)
+boring  2.4% (pos)      9.6% (neg)
+poor    2.9% (pos)      10.3% (neg)
+
+[TASK (b)] Train English classifier and make predictions
+Approach: TF-IDF word n-grams; analyzer=word; ngram_range= (1, 3) ; model= linsvc
+Total features: 4288049
+
+=== First 10 predictions: English test ===
+178138891983d90a062a84f8d01f3935        1
+e53848a9c48869e97ec7f2d1e32327d4        1
+407c075e5ec73afa15484d73b6ebe01f        0
+650e93921ceaf50108ec9b7203d51359        0
+a4617cf368c82dcf181057a3d22aa029        1
+a0a5c1d64843e616e60b2cdb0b389403        0
+460c94f6cb48ed1f85607691cf285ebb        1
+a707c4bb7b4f6ccd17a0b22d1ad071f9        1
+e8b9198fc31cb3f458ae2b804eedf778        1
+48a07161c7175c89e7f2df1c321bfa24        1
+
+[TASK (c)] Evaluation on English test set
+
+=== English (classes 0 and 1) ===
+Confusion matrix [ [TN, FP], [FN, TP] ]:
+[[446  41]
+ [ 36 477]]
+class_0: Precision = 446 / (446 + 36) = 0.9253; Recall = 446 / (446 + 41) = 0.9158; F1 = 0.9205
+class_1: Precision = 477 / (477 + 41) = 0.9208; Recall = 477 / (477 + 36) = 0.9298; F1 = 0.9253
+
+=== Sample misclassifications: English ===
+1. id=5cb897d9a3fb2fa3818a80d9bc4b47cf true=0 pred=1 | Saving Grace is surely one of the leading contenders for the 'How to Ruin an Adequate Film in the Final Few Minutes' award. Naturally if you mix a quaint Cornish village - largely populated by retired genteel ladies - with a liberal dose of marijuana, a certain amount of silliness will ensue.…
+2. id=0983f2324d211708c2faa76db465fe51 true=0 pred=1 | This movie is AWESOME. I watched it the other day with my cousin Jay-Jay. He said it was alright, but i think it RULEZZZ! I mean, it's so cool. Ted V. Mikels is so brave and smart. He made a movie totally unlike those terrible Hollywood films, like the Matrix and STop or my Mom will Shoot. It could…
+3. id=8b48ce3f180361ef5688a856e0796420 true=0 pred=1 | I had high hopes for this one after reading earlier reviews but it was so slow and the plot so basic that well I wondered if I had read the wrong reviews. Please, a boy meets girl next door at 11 and both aspire to love and being basketball legends. Grow apart, but watch each others progress. Guess…
+4. id=22b24134e277eff72d9d9cf5a51e56dc true=1 pred=0 | Why did I vote 10/10 for this movie that is just completely off guts*? Quite simply because if you just let yourself find it funny, you can just laugh until you choke. Some people might find that it goes too far, it is certainly not for everyone, but whenever I'm down and just need something really…
+5. id=e62373113972cd911f13e3fdde870d34 true=0 pred=1 | In his 1966 film "Blow Up", Antonioni had his hero question truth against a backdrop of British youth protesters. By setting such questions against a fabric of hippie youth movements, Antonioni questioned, intentionally or not, the effectiveness of these organisations. How can you fight for a cause…
+6. id=c556a8f62356447a9a538b06ceb3858a true=1 pred=0 | The legendary Boris Karloff ended his illustrious career by making four cheapie fright flick clunkers in Mexico. This is the token moody period Gothic horror entry from the bunch. Karloff gives a typically spry and dignified performance as Matthias Morteval, an elderly eccentric patriarch who…
+7. id=7e3dc615179597b9911bb5225e0fc82c true=0 pred=1 | I am at a distinct disadvantage here. I have not seen the first two movies in this series, although I have seen a lot of Larry Cohen films. Fans of the series seem to think this is a good film. Judging it on it's own, it was pretty boring. You never get a real good look at the maniac cop's (Robert…
+8. id=e75e45683e2fac4fb58c6205bf26e77c true=1 pred=0 | I give this movie 7 out of 10 because the villains were interesting in their roles and the unknown batwoman creates an interesting "guess who" game. The movie, however, needs more Robin in it. He appeared in the movie in the beginning and sporadically throughout the rest. I always thought the new…
+9. id=5517dcf730a57f8649754a705833b12a true=1 pred=0 | If this is supposed to be a portrayal of the American serial killer, it comes across as decidedly average. A journalist [Duchovny] travels across country to California to document America's most famous murderers, unaware that one of his white trailer trash travelling companions [Pitt] is a serial…
+10. id=e186481202c7f1917dc9b35774df0701 true=0 pred=1 | I went to a screening of this movie and while it had a couple moments that made me laugh, it had some very major flaws. It first of all presents itself to be the humorous exploits of a real-life divorcee trying to find love in LA. What it morphs into is a depressing, narcissistic, and unfunny romp…
+
+[TASK (d)] Train and evaluate Spanish classifier
+Approach: TF-IDF word n-grams; analyzer=word; ngram_range= (1, 3) ; model= linsvc
+Total features: 980195
+
+=== First 10 predictions: Spanish test ===
+6d40379c97b3e339f5dc7d2d9acf8b57        1
+75a5fdf708c546d807547f230e77a53b        0
+577a509e89db721d5a035b3f86673cfd        0
+b664feb7b03e6f9a04168d0329d74e08        0
+2a2b45db064d32f68004896550353055        1
+47bdade61d529693419316700df9cb3d        1
+1d18f38d63129bd3e56a2cf44eac9133        0
+887ac79e3ae5f3b5420002d8a968d5e9        0
+c1fa846cf5fd32992ae015afa00e18c5        1
+e277057b2dff945af3f087cec5a5074c        1
+
+=== Spanish (classes 0 and 1) ===
+Confusion matrix [ [TN, FP], [FN, TP] ]:
+[[340 156]
+ [ 20 484]]
+class_0: Precision = 340 / (340 + 20) = 0.9444; Recall = 340 / (340 + 156) = 0.6855; F1 = 0.7944
+class_1: Precision = 484 / (484 + 156) = 0.7562; Recall = 484 / (484 + 20) = 0.9603; F1 = 0.8462
+
+=== Sample misclassifications: Spanish ===
+1. id=b664feb7b03e6f9a04168d0329d74e08 true=1 pred=0 | Muy impresionada he quedado con Diamante de sangre. Edward Zwick -experimentado en tragedias épicas- nos traslada al pasado reciente de Sierra Leona, en plena guerra civil. Muy impresionada he quedado con Diamante de sangre. Edward Zwick -experimentado en tragedias épicas- nos traslada al pasado…
+2. id=2a2b45db064d32f68004896550353055 true=0 pred=1 | Salí del cine con la convicción de que hacía mucho tiempo no veía una película tan mala como esta. Apenas son las 11 y 20 de la noche y aunque aún faltan 40 minutos para el inicio de la película, Leuzor y yo debemos estar en los puestos 61 y 62 de los ansiosos que esperan el Avant Premiere de La…
+3. id=c289a5e7eebc1e4c0505e1bdb2a92b03 true=0 pred=1 | La peli dirigida por William Sachs es un desfase que juega en la misma liga que Me bebo tu sangre o Supersonic Man, la liga clásica de la serie Z. ¿Cómo empezar a hablar de una película como esta?Os contaré de que va en tres frases: un astronauta que se va a Saturno vuelve viscoso y radioactivo y…
+4. id=376620f0998af95b93976ad1d695a775 true=0 pred=1 | Un guión bastante light con frases como 'el problema de la felicidad es que es aburrida'. Que yo sepa es primera vez que una película de ficción recrea a los Rolling Stones, con esto ya tenemos razón suficiente para querer verla, ¿no?. "Stoned" (2005) de Stephen Woolley intenta contar la…
+5. id=57ad58b1778df1da86976661fbd600ec true=0 pred=1 | Sobrevalorado filme del muy considerado Todd Field. Invento de los críticos americanos, quienes, quizás, buscan desesperadamente un Stephen Frears inglés o un Pedro Almodóvar español para asegurar su propia identidad en los útlimos años. Película elaborada a partir de un argumento agotado, material…
+6. id=16af62bb1baee934c06513af921cd000 true=1 pred=0 | No sé quién es el director. No sé quiénes son los actores. No sé quienes son los guionistas. Lo único que puedo hacer para motivarles a verla es decirles que más quisieran muchos de ahora tener la genialidad de los de antes, porque si de algo hace gala la cinta es de su genialidad. Vi Laura porque…
+7. id=563e9c117000d003d107dab9e88e0d90 true=0 pred=1 | Virus informáticos que se extienden, apariciones fantasmales, un futuro en peligro: todo un pulso a la paciencia del espectador. Enésima cinta de terror influenciada por elementos asiáticos que nos llega a la cartelera de nuestro país, y una vez más lo hace desde el lugar en el que nacen estrellas…
+8. id=57922ab58ac99fa0397e9a6dc8002875 true=0 pred=1 | No es suficiente, evidentemente, con un final brillante: el conjunto confirma que la saga no está en su mejor momento cinematográfico. Era de prever: David Yates, el director del quinto capítulo de la serie de Harry Potter (y lo que es peor, también el de la siguiente entrega, según se anuncia), no…
+9. id=1e79ecf37b9d47b1c1fe42ed7934be9e true=0 pred=1 | El corto Hotel Chevalier posiblemente sea lo mejor de la cinta. Debo dejar claro que hasta los más asiduos seguidores coincidirán que Viaje a Darjeeling es una de las peores cintas hasta la fecha de Anderson. No soy una gran fan de Wes Anderson, casi me podría apuntar al grupo de detractores del…
+10. id=0fd939d96e73d2fdb9a87b43acd97d96 true=1 pred=0 | El argumento es la trilladísima historia de superación personal que tanto gusta a los americanos. De hecho, la peli es americanísima.. desde el punto de vista zafio y bipolarmente improvisado. Pasado de vueltas, (Tallega nights: The ballad of Ricky Bobby, 2006, Adam Mckay) es, a pesar de no contar…
+
+[TASK (e)] Cross-language classification via MT (ES→EN translate with googletrans, then English model)
+Approach: MT googletrans ES→EN + English TF-IDF word n-grams; analyzer=word; ngram_range= (1, 3) ; model= linsvc
+
+=== First 10 predictions: Cross-lang MT (Spanish→English test) ===
+6d40379c97b3e339f5dc7d2d9acf8b57        1
+75a5fdf708c546d807547f230e77a53b        0
+577a509e89db721d5a035b3f86673cfd        0
+b664feb7b03e6f9a04168d0329d74e08        1
+2a2b45db064d32f68004896550353055        0
+47bdade61d529693419316700df9cb3d        1
+1d18f38d63129bd3e56a2cf44eac9133        0
+887ac79e3ae5f3b5420002d8a968d5e9        0
+c1fa846cf5fd32992ae015afa00e18c5        1
+e277057b2dff945af3f087cec5a5074c        1
+
+=== Cross-language MT on Spanish test (classes 0 and 1) ===
+Confusion matrix [ [TN, FP], [FN, TP] ]:
+[[245 251]
+ [ 12 492]]
+class_0: Precision = 245 / (245 + 12) = 0.9533; Recall = 245 / (245 + 251) = 0.4940; F1 = 0.6507
+class_1: Precision = 492 / (492 + 251) = 0.6622; Recall = 492 / (492 + 12) = 0.9762; F1 = 0.7891
+
+=== Sample misclassifications: Cross-language MT ===
+1. id=bc9b8931e2504568c9e9daee695d20d4 true=0 pred=1 | La Carta Esférica es una película de intriga que pretende aportar mucha tensión y emoción y al final no cumple con lo prometido. Hay géneros que el gran público parece que sólo asocia a una determinada cinematografía, comúnmente la norteamericana. Géneros como los musicales, el cine bélico, el cine…
+2. id=1ae8e8c67c63dccd493d46ff8bd5c106 true=0 pred=1 | Audrey Tatou regresa a la comedia romántica, pero esta vez no convence. No gustará ni a los incondicionales de Audrey Tatou, ni a los amantes de la comedia romántica.. Audrey Tatou, la entrañable Amelie, abandona su disfraz de dúlce y tierna para encarnar a una "devora hombres", una mujer guapa y…
+3. id=e242b163d103cdc196081698e4326027 true=0 pred=1 | Ni esto es un western, ni esto es salir del armario. Es, en ocasiones, bastante efectista, pero ahonda en aspectos que no desarrollan la trama principal. Hoy ha tocado ir al cine a ver el nuevo trabajo del irregular Ang Lee. Esperaba con ansias esta película, y mucho más tras los Globos de Oro,…
+4. id=57ad58b1778df1da86976661fbd600ec true=0 pred=1 | Sobrevalorado filme del muy considerado Todd Field. Invento de los críticos americanos, quienes, quizás, buscan desesperadamente un Stephen Frears inglés o un Pedro Almodóvar español para asegurar su propia identidad en los útlimos años. Película elaborada a partir de un argumento agotado, material…
+5. id=be37c613a0c0ed953032fa4872829ce6 true=0 pred=1 | La búsqueda de una película decente se convierte en el topetazo con un insulto a la inteligencia humana del que siendo muy generosos podemos decir que en algunos momentos llega a ser entretenida, y gracias. Benjamin Gates es un gran buscador de tesoros, miembro de una prestigiosa familia americana,…
+6. id=0d23b948c8158194b92e52147a18e1b8 true=0 pred=1 | ¿Quién dice que es fácil? es otro clamoroso ejemplo de comedia divertida que pudo llegar a ser, pero que se queda en una triste comedia sentimental divertida a ratos. Hay muchas cosas que le aportan a la vida la sal y la pimienta que necesita, y uno de esos elementos es la ironía que se gasta a…
+7. id=563e9c117000d003d107dab9e88e0d90 true=0 pred=1 | Virus informáticos que se extienden, apariciones fantasmales, un futuro en peligro: todo un pulso a la paciencia del espectador. Enésima cinta de terror influenciada por elementos asiáticos que nos llega a la cartelera de nuestro país, y una vez más lo hace desde el lugar en el que nacen estrellas…
+8. id=02565641501739c9202966fc394ea2cc true=0 pred=1 | Una película con la que los chicos pasaran un buen rato y las chicas aunque disfruten de la presencia de Law mirarán a su pareja con cierta cara de "mala uva". Partiendo de que no he visto la película original, aunque no sé porqué esta me llamaba bastante la atención (tal vez por la atractiva…
+9. id=57922ab58ac99fa0397e9a6dc8002875 true=0 pred=1 | No es suficiente, evidentemente, con un final brillante: el conjunto confirma que la saga no está en su mejor momento cinematográfico. Era de prever: David Yates, el director del quinto capítulo de la serie de Harry Potter (y lo que es peor, también el de la siguiente entrega, según se anuncia), no…
+10. id=1e79ecf37b9d47b1c1fe42ed7934be9e true=0 pred=1 | El corto Hotel Chevalier posiblemente sea lo mejor de la cinta. Debo dejar claro que hasta los más asiduos seguidores coincidirán que Viaje a Darjeeling es una de las peores cintas hasta la fecha de Anderson. No soy una gran fan de Wes Anderson, casi me podría apuntar al grupo de detractores del…

@@ -1,0 +1,18 @@
+{
+  "algo": "tfidf",
+  "input": "duplicatetests\\threehundred.tsv",
+  "n_docs": 300,
+  "runtime_seconds": 150.3136,
+  "peak_memory_mb": 243.98,
+  "n_clusters": 219,
+  "avg_cluster_size": 1.37,
+  "algo_stats": {
+    "accepted_edges": 162,
+    "vocab_size": 155291,
+    "pair_candidates": 44850
+  },
+  "tf_analyzer": "char",
+  "tf_min": 3,
+  "tf_max": 5,
+  "cosine_threshold": 0.9
+}

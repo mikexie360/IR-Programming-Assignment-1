@@ -1,0 +1,20 @@
+{
+  "algo": "minhash",
+  "input": "duplicatetests\\thirtyk.tsv",
+  "n_docs": 30000,
+  "runtime_seconds": 5622.7138,
+  "peak_memory_mb": 4081.41,
+  "n_clusters": 22371,
+  "avg_cluster_size": 1.341,
+  "algo_stats": {
+    "candidate_pairs": 29017,
+    "accepted_edges": 15944
+  },
+  "num_shingles_nonempty": 30000,
+  "avg_shingle_set_size": 640,
+  "k": 5,
+  "num_perm": 100,
+  "bands": 20,
+  "rows_per_band": 5,
+  "jaccard_threshold": 0.8
+}

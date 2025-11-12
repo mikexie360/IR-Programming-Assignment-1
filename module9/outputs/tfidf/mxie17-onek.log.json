@@ -1,0 +1,18 @@
+{
+  "algo": "tfidf",
+  "input": "duplicatetests\\onek.tsv",
+  "n_docs": 1000,
+  "runtime_seconds": 2150.4369,
+  "peak_memory_mb": 797.1,
+  "n_clusters": 645,
+  "avg_cluster_size": 1.55,
+  "algo_stats": {
+    "accepted_edges": 988,
+    "vocab_size": 257199,
+    "pair_candidates": 499500
+  },
+  "tf_analyzer": "char",
+  "tf_min": 3,
+  "tf_max": 5,
+  "cosine_threshold": 0.9
+}

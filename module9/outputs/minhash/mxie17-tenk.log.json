@@ -1,0 +1,20 @@
+{
+  "algo": "minhash",
+  "input": "duplicatetests\\tenk.tsv",
+  "n_docs": 10000,
+  "runtime_seconds": 2003.909,
+  "peak_memory_mb": 1364.97,
+  "n_clusters": 7541,
+  "avg_cluster_size": 1.326,
+  "algo_stats": {
+    "candidate_pairs": 9078,
+    "accepted_edges": 5150
+  },
+  "num_shingles_nonempty": 10000,
+  "avg_shingle_set_size": 644,
+  "k": 5,
+  "num_perm": 100,
+  "bands": 20,
+  "rows_per_band": 5,
+  "jaccard_threshold": 0.8
+}
